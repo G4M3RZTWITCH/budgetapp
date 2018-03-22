@@ -3,7 +3,13 @@
   "description": "Our sample Node to Heroku app",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "dependencies": {
     "ejs": "^1.0.0",
